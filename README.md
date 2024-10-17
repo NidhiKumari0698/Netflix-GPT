@@ -1,3 +1,38 @@
+<!-- Personal Notes -->
+
+# Netflix GPT
+
+-Create React App
+-Configure TailwindCSS
+-Header
+-Login Form
+-sign in and sign up form
+
+# Features
+
+-Login/Sign Up
+-Sign In /Sign up form
+-redirect to Browse Page
+
+-Browse (after authentication)
+
+- Header
+- Main Movie
+  -Trailer in Background
+  -Title & Description
+  -Movie Suggestion
+  -MovieLists \* N
+
+  -NetflixGPT
+  -Search Bar
+  -Movie Suggestions
+
+#
+
+1. npm i -D react-router-dom // to setup routing
+
+<!-- Personal Notes -->
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
