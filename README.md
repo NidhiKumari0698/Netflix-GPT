@@ -5,8 +5,18 @@
 -Create React App
 -Configure TailwindCSS
 -Header
+-Routing of App
 -Login Form
 -sign in and sign up form
+-form validation
+-useRef Hook
+-Firebase setup
+-create project inside google firebase-> go to console
+-npm install firebase inside our curr project
+-deploying project on firebase
+-create signup user account
+-Implement sign in user api
+-created redux store with userSlice
 
 # Features
 

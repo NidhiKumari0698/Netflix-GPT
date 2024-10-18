@@ -3,3 +3,9 @@ export const netflix_logo =
 
 export const home_background_logo =
   "https://assets.nflxext.com/ffe/siteui/vlv3/7c0e18aa-2c95-474d-802e-7f30e75dcca4/web/IN-en-20241014-TRIFECTA-perspective_e7121311-c11e-4809-a3e6-22abffa33569_large.jpg";
+
+export const user_icon =
+  "https://occ-0-2164-2186.1.nflxso.net/dnm/api/v6/vN7bi_My87NPKvsBoib006Llxzg/AAAABXYofKdCJceEP7pdxcEZ9wt80GsxEyXIbnG_QM8znksNz3JexvRbDLr0_AcNKr2SJtT-MLr1eCOA-e7xlDHsx4Jmmsi5HL8.png?r=1d4";
+
+export const nidhi_propic_pic =
+  "https://media.licdn.com/dms/image/v2/C5603AQFeP0s4-z17yA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1517040345194?e=1734566400&v=beta&t=Tf7vCI-_Dd0AK_xNryn0i4Gflx8N69EspoupG-xoJH8";
