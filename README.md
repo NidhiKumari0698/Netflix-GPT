@@ -18,6 +18,15 @@
 -Implement sign in user api
 -created redux store with userSlice
 
+Browse Page
+{/\* MainContainer
+-VideoBackground
+-VideoTitle
+
+      SecondaryContainer
+        -MovieList * n
+          -cards * n */}
+
 # Features
 
 -Login/Sign Up

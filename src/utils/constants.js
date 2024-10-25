@@ -9,3 +9,12 @@ export const user_icon =
 
 export const nidhi_propic_pic =
   "https://media.licdn.com/dms/image/v2/C5603AQFeP0s4-z17yA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1517040345194?e=1734566400&v=beta&t=Tf7vCI-_Dd0AK_xNryn0i4Gflx8N69EspoupG-xoJH8";
+
+export const API_OPTIONS = {
+  method: "GET",
+  headers: {
+    accept: "application/json",
+    Authorization:
+      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyMDg3ZWZjYzk4MTgxNGQwZjQ4MjI1MmJjMDhiZTlmZCIsIm5iZiI6MTcyOTU2OTQ5OC45MDEwMTIsInN1YiI6IjY3MDVkZjEwMDAwMDAwMDAwMDU4NmViNSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.TMdhDtTiR05jrQkE56A7PHSBNxJeax-xJWxP7eWF42U",
+  },
+};

@@ -15,7 +15,6 @@ import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
 
 const Login = () => {
-  console.log("LOGIN COMP RENDERING STARTED");
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [isSignInForm, setIsSignInForm] = useState(true);
@@ -29,21 +28,13 @@ const Login = () => {
     setIsSignInForm(!isSignInForm);
   };
   const handleBtnClick = () => {
-    //validate the form data
-    console.log(
-      "email & password",
-      name?.current?.value,
-      email?.current?.value,
-      password.current.value
-    );
-
+    //validate the form
     const message = checkValidData(
       name?.current?.value,
       email?.current?.value,
       password?.current?.value
     );
     setErrorMessage(message);
-    console.log("message::::::", message);
     if (message) return;
     //sign/sign up
     //sign
@@ -56,7 +47,6 @@ const Login = () => {
         .then((userCredential) => {
           // Signed in
           const user = userCredential.user;
-          console.log("user::", user);
           navigate("/browse");
         })
         .catch((error) => {
@@ -65,8 +55,6 @@ const Login = () => {
           setErrorMessage(errorCode + " - " + errorMessage);
         });
     } else {
-      console.log("Inside else");
-
       createUserWithEmailAndPassword(
         auth,
         email.current.value,
@@ -75,7 +63,6 @@ const Login = () => {
         .then((userCredential) => {
           // Signed up
           const user = userCredential.user;
-          console.log("user::::", user);
           navigate("/browse");
           //
           updateProfile(auth.currentUser, {
@@ -83,9 +70,7 @@ const Login = () => {
             photoURL: nidhi_propic_pic,
           })
             .then((data) => {
-              console.log("Profile updated---------------->", data);
               const { uid, email, displayName, photoURL } = auth.currentUser;
-              console.log(uid, " ", email, " ", displayName, " ", photoURL);
               dispatch(addUser({ uid, email, displayName, photoURL }));
 
               // Profile updated!
@@ -104,10 +89,8 @@ const Login = () => {
         });
     }
   };
-  console.log("LOGIN COMP RENDERING ENDED");
   return (
     <>
-      <Header />
       <form
         onSubmit={(event) => {
           event.preventDefault();
