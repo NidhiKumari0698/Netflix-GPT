@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "./utils/firebase";
 import { addUser, removeUser } from "./utils/userSlice";
+import { removeMovies } from "./utils/moviesSlice";
 function App() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -21,6 +22,7 @@ function App() {
       } else {
         // User is signed out
         dispatch(removeUser());
+        dispatch(removeMovies());
         navigate("/");
       }
     });
